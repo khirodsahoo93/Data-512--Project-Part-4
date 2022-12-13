@@ -42,11 +42,11 @@ The Pearson correlation between the unemployment rate and covid confirmed cases 
 I checked the relationship between the dependent ( unemployment rate ) and the independent variable ( covid confirmed cases) through the beta coefficient. I also tested the significance of the independent variables from their associated p-value. A similar analysis was also performed with the hotness score as the dependent variable and monthly confirmed cases as the independent variable.
 
 
-## Output files
+## Charts and Findings
 
-`wp_countries-no_match.txt` - This file contains the names of the politicians for which no response was found.
-
-`wp_politicians_by_country.csv` -This file contains the name of the politicians ('article title') with 'country','region','population','revision_id' and 	'article_quality' for which respone was found
+ ![1](https://github.com/khirodsahoo93/Data-512--Project-Part-4/blob/main/Plots/Confirmed%20cases%20Vs%20Hotness%20score.jpeg)
+ ![2](https://github.com/khirodsahoo93/Data-512--Project-Part-4/blob/main/Plots/Confirmed%20cases%20Vs%20unemployment%20rate.jpeg)
+ ![3](https://github.com/khirodsahoo93/Data-512--Project-Part-4/blob/main/Plots/Monthly%20growth%20in%20employees.jpeg)
 
 ## License
 - This assignment code is released under the MIT License.
