@@ -5,8 +5,8 @@ The goal of this project is to investigate the implications of Covid-19 pandemic
 ## Data Sources Used
 For the analysis we are using 5 data sources:
 
-- `Market Hotness Index Dataset` - contains monthly hotness index score from 2018 to 2022
-- `Unemployment rate Dataset` - contains monthly unemployment rate from 1990 to 2022
+- `Market Hotness Index Dataset [HOSCCOUNTY39061.csv]` - contains monthly hotness index score from 2018 to 2022
+- `Unemployment rate Dataset[OHHAMI1URN.csv]` - contains monthly unemployment rate from 1990 to 2022
 - `Employees growth by economic sectors Dataset` - contains monthly time series data indicating the growth of employees in each super sector for Cincinnati county.
 - `US mask mandate dataset` - from common analysis
 - `US daily confirmed cases` - from common analysis
