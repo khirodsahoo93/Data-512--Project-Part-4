@@ -1,12 +1,16 @@
 
 ## Goal
-The goal of this project is investigate bias in the article quality score of various wikipedia pages by countries and regions.
+The goal of this project is to investigate the implications of Covid-19 pandemic on unemployment rate and market hotness index in the Hamilton county, Ohio.
 
 ## Data Sources Used
-For the analysis we are using 2 data sources:
+For the analysis we are using 5 data sources:
 
-- `politician_2022 Dataset` - contains list of article names , regions and their urls
-- `population_2022 Dataset` - contains list of countries, their region and population
+- `Market Hotness Index Dataset` - contains monthly hotness index score from 2018 to 2022
+- `Unemployment rate Dataset` - contains monthly unemployment rate from 1990 to 2022
+- `Employees growth by economic sectors Dataset` - contains monthly time series data indicating the growth of employees in each super sector for Cincinnati county.
+- 'US mask mandate dataset' - from common analysis
+- 'US daily confirmed cases' - from common analysis
+
 
 ### Data Descriptions
 
