@@ -34,6 +34,9 @@ For the analysis we are using 5 data sources:
 │   ├── Monthly confirmed cases.jpeg
 │   ├── Monthly growth in employees.jpeg
 │   ├── Monthly unemployment rate.jpeg
+├── Previous analysis
+│   ├── Common Analysis
+│   ├── Extention plan
 
 ```
 
