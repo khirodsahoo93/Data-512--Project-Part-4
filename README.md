@@ -22,7 +22,8 @@ For the analysis we are using 5 data sources:
 │   ├── Employment by Industry Sector.csv
 │   ├── HOSCCOUNTY39061.csv
 │   └── OHHAMI1URN.csv
-|   |── OHHAMI1URN.csv
+│   ├── RAW_us_confirmed_cases.csv
+│   ├── mask-use-by-county.csv
 ├── Reflection
 |   ├── HW4 part1- reflection 1.docx
 |   ├── HW4 part1- reflection 2.docx
