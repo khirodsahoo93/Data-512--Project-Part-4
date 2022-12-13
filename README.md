@@ -24,15 +24,16 @@ For the analysis we are using 5 data sources:
 │   └── OHHAMI1URN.csv
 │   ├── RAW_us_confirmed_cases.csv
 │   ├── mask-use-by-county.csv
-├── Reflection
-|   ├── HW4 part1- reflection 1.docx
-|   ├── HW4 part1- reflection 2.docx
+├── Data 512- Final Report.pdf
 ├── Plots
-│   ├── cases_per_unit_time.png
-│   ├── Daily confirmed cases.png
-│   ├── Daily cumulative confirmed cases.png
-│   ├── daily_cases_growth_rate.jpeg
-│   ├── infection_rate.jpeg
+│   ├── Confirmed cases Vs Hotness score.jpeg
+│   ├── Confirmed cases Vs Hotness score_2.jpeg
+│   ├── Confirmed cases Vs unemployment rate.jpeg
+│   ├── Confirmed cases Vs unemployment rate_2.jpeg
+│   ├── Face_Masks_Required_in_Public_policy.jpeg
+│   ├── Monthly confirmed cases.jpeg
+│   ├── Monthly growth in employees.jpeg
+│   ├── Monthly unemployment rate.jpeg
 
 ```
 
@@ -55,35 +56,12 @@ I checked the relationship between the dependent ( unemployment rate ) and the i
 
 ## License
 - This assignment code is released under the MIT License.
-- The Wikipedia English language articles data source is released under the CC-BY-SA 4.0 license.
-
+- The license for the datasets used are mentioned in the report [Data 512- Final Report.pdf]
 
 ## Research Implications
+From the above analysis, we realized that the immediate impact of the covid-19 is quite visible. With the outbreak of covid-19, the unemployment rate dipped and the market hotness index plummeted as well. This observation lines up with the research in section 2, where we read about the immediate impact of covid-19 on the unemployment rate and the housing market.
+However, we expected the unemployment rate to keep increasing with the increase in the number of cases. This is quite not what we observed in our analysis. The unemployment rate improved during the covid-19 period. This aligns with the article from US labor statistics[1] where it was mentioned that the unemployment rate started decreasing towards the end of the second quarter.
+Also, as opposed to what was expected, the relationship between unemployment and hotness score with rising covid cases was not linear. From the Pearson correlation, we found a weak correlation between the variables. The nonlinear behavior could be because of many external factors like pharmaceutical and non-pharmaceutical interventions during covid-19.
+It is clear the unemployment rate or the hotness score could not be modeled with just the confirmed cases data. Future work could build on this by using the data like vaccination rates, sanctioned covid relief funds, or new work policies data and with the addition of these new data, the dependent variables - market hotness index and the unemployment rate could be modeled.
+Unemployment and the housing market are closely tied to humans as people need jobs in order to earn and survive.  Many people lost jobs, and businesses were shut down while new jobs were also created. Also, owning a house is an American dream, and people were able to buy homes due to plummeting mortgage rates making many dreams come true. This analysis helped me to understand the extent to which an event like a pandemic could impact people’s lives.
 
-### Special Considerations
-
-1. The population dataset contained name of both countries and regions in the Geography column. The population against the regions were the sum of population of all the countries preceded by it. So a data cleaning operation was performed to keep only countries name in the Geography columns and mapped the corresponding regions against them with the lowest hierarchy.
-2. In the politician datasets, there were duplicate rows which were removed but the duplicates based on name and country were retained so that they can be used to calculate articles per capita.
-3. Since, the population is in millions, there were countries which may have low populations due to which population in millions is 0. This turned out problematic when ratios were calculated.
-
-What I Learned ?
-
-- Reproducibility is hard
-
-In my own code, I faced problems when I was trying to re-run a snippet. There were different errors everytime I was re-running. Also, when I was calling the API between different days, I was surprised to see that some pages gets deleted the next day which also impacted few of my figures. 
-
-- Results may be biased
-
-Since , the data is crawled from the wikipedia website and even if several preprocessing had been done to get a cleaner data , there is still a chance that some articles may not have been successfully crawled which could lead to wrong interpretation of the results. More details on how the data was captured could validate my hypothesis. Also, there is a chance of linguistic bias in the data as few non-english speaking nations may be educated but their english may be slightly different leading to scoring low for those articles. 
-
-What biases did you expect to find in the data (before you started working with it), and why? 
-
-- I expected to see the developed nations to have high coverage as compared to underdeveloped nation as I assumed that developed nations would have higher literacy rate and hence would have more number of articles.
-
-Can you think of a realistic data science research situation where using these data (to train a model, perform a hypothesis-driven research, or make business decisions) might create biased or misleading results, due to the inherent gaps and limitations of the data?
-
-- The exit poll survey that is often used to predict election results has biases because the survey responders could only be the people who are willing to participate. Also, the survey may done on regions which may not be the right representative of the entire population who are going to vote.
-
-How might a researcher supplement or transform this dataset to potentially correct for the limitations/biases you observed? 
-
-- For one instance, the researcher can include english speaking population numbers in each country. So that the articles per capita can be calculated based on english speaking population instead of total population to give a fair comparison
