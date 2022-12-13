@@ -32,13 +32,13 @@ For the analysis we are using 5 data sources:
 Note-The above data contains some rows that provide cumulative regional population counts. These rows are distinguished by having ALL CAPS values in the 'geography' field (e.g. AFRICA, OCEANIA)
 
 ### Methodology
-- Data Cleaning:
+- *Data Cleaning*:
 The 3 datasets discussed above for the extended analysis are on a monthly level, and the US daily confirmed cases data is also standardized to a monthly level for further merging and easier analysis.
-- EDA
+- *EDA*:
 After cleaning the data and ensuring the continuity of all the time series data, I first performed exploratory data analysis. The time series plots for the unemployment rate, hotness score for Hamilton county, and employee growth rate by different economic sectors are analyzed. 
-- Correlation
+- *Correlation*:
 The Pearson correlation between the unemployment rate and covid confirmed cases and the market hotness index and covid confirmed cases were checked to obtain a preliminary sense if my hypothesis is right or wrong. To validate the results further, I performed regression analysis keeping just one predictor at a time.
-- Regression analysis
+- *Regression analysis*:
 I checked the relationship between the dependent ( unemployment rate ) and the independent variable ( covid confirmed cases) through the beta coefficient. I also tested the significance of the independent variables from their associated p-value. A similar analysis was also performed with the hotness score as the dependent variable and monthly confirmed cases as the independent variable.
 
 
