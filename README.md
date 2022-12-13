@@ -50,8 +50,14 @@ I checked the relationship between the dependent ( unemployment rate ) and the i
 
 ## Charts and Findings
 
+The market hotness index decreased initially after the onset of covid in March 2020 which makes sense as there were lockdowns and other policies like mask mandates were in place. But then the score increased even when the cases increased after June 2021 similar to our initial theory and research. It kept increasing until Jan 2022 when the omicron variant was spreading rapidly and the cases were at an all-time peak.
+
  ![1](https://github.com/khirodsahoo93/Data-512--Project-Part-4/blob/main/Plots/Confirmed%20cases%20Vs%20Hotness%20score.jpeg)
+ 
+ During the  start of covid in Mar 2020, the unemployment rate spiked and during the peak of covid in Jan 2022 too, the unemployment rate started increasing again. But in other time periods during covid, the unemployment rate decreased after rising which could be due to various policies introduced by the government like covid relief funds and welfare schemes.
  ![2](https://github.com/khirodsahoo93/Data-512--Project-Part-4/blob/main/Plots/Confirmed%20cases%20Vs%20unemployment%20rate.jpeg)
+ 
+ Until covid 19, the employment growth rate was almost constant across all sectors but after covid, some sectors were affected more than others - the leisure and hospitality sectors were impacted the most among all the sectors.
  ![3](https://github.com/khirodsahoo93/Data-512--Project-Part-4/blob/main/Plots/Monthly%20growth%20in%20employees.jpeg)
 
 ## License
@@ -60,8 +66,6 @@ I checked the relationship between the dependent ( unemployment rate ) and the i
 
 ## Research Implications
 From the above analysis, we realized that the immediate impact of the covid-19 is quite visible. With the outbreak of covid-19, the unemployment rate dipped and the market hotness index plummeted as well. This observation lines up with the research in section 2, where we read about the immediate impact of covid-19 on the unemployment rate and the housing market.
-However, we expected the unemployment rate to keep increasing with the increase in the number of cases. This is quite not what we observed in our analysis. The unemployment rate improved during the covid-19 period. This aligns with the article from US labor statistics[1] where it was mentioned that the unemployment rate started decreasing towards the end of the second quarter.
-Also, as opposed to what was expected, the relationship between unemployment and hotness score with rising covid cases was not linear. From the Pearson correlation, we found a weak correlation between the variables. The nonlinear behavior could be because of many external factors like pharmaceutical and non-pharmaceutical interventions during covid-19.
-It is clear the unemployment rate or the hotness score could not be modeled with just the confirmed cases data. Future work could build on this by using the data like vaccination rates, sanctioned covid relief funds, or new work policies data and with the addition of these new data, the dependent variables - market hotness index and the unemployment rate could be modeled.
-Unemployment and the housing market are closely tied to humans as people need jobs in order to earn and survive.  Many people lost jobs, and businesses were shut down while new jobs were also created. Also, owning a house is an American dream, and people were able to buy homes due to plummeting mortgage rates making many dreams come true. This analysis helped me to understand the extent to which an event like a pandemic could impact people’s lives.
+However, we expected the unemployment rate to keep increasing with the increase in the number of cases. This is quite not what we observed in our analysis. The unemployment rate improved during the covid-19 period. This aligns with the article from US labor statistics where it was mentioned that the unemployment rate started decreasing towards the end of the second quarter.
+Also, as opposed to what was expected, the relationship between unemployment and hotness score with rising covid cases was not linear. From the Pearson correlation, we found a weak correlation between the variables. The nonlinear behavior could be because of many external factors like pharmaceutical and non-pharmaceutical interventions during covid-19. Unemployment and the housing market are closely tied to humans as people need jobs in order to earn and survive.  Many people lost jobs, and businesses were shut down while new jobs were also created. Also, owning a house is an American dream, and people were able to buy homes due to plummeting mortgage rates making many dreams come true. This analysis helped me to understand the extent to which an event like a pandemic could impact people’s lives.
 
