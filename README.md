@@ -11,25 +11,29 @@ For the analysis we are using 5 data sources:
 - `US mask mandate dataset` - from common analysis
 - `US daily confirmed cases` - from common analysis
 
+## Repo structure
 
-### Data Descriptions
+```bash
 
-*Market Hotness Index Datasett*
+├── pandemic_analysis_extended.ipynb
+├── README.md
+├── LICENSE
+├── Input Data
+│   ├── Employment by Industry Sector.csv
+│   ├── HOSCCOUNTY39061.csv
+│   └── OHHAMI1URN.csv
+|   |── OHHAMI1URN.csv
+├── Reflection
+|   ├── HW4 part1- reflection 1.docx
+|   ├── HW4 part1- reflection 2.docx
+├── Plots
+│   ├── cases_per_unit_time.png
+│   ├── Daily confirmed cases.png
+│   ├── Daily cumulative confirmed cases.png
+│   ├── daily_cases_growth_rate.jpeg
+│   ├── infection_rate.jpeg
 
-| Column | Description |
-| ------ | ----------- |
-| name   | title/name of the politician
-| url    | url of the wikipedia page
-| country| country associated with the politician
-
-*Population dataset*
-
-| Column | Description |
-| ------ | ----------- |
-| Geography   | Country and Regions
-| population (in millions) | Population in millions
-
-Note-The above data contains some rows that provide cumulative regional population counts. These rows are distinguished by having ALL CAPS values in the 'geography' field (e.g. AFRICA, OCEANIA)
+```
 
 ### Methodology
 - *Data Cleaning*:
