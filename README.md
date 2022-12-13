@@ -8,13 +8,13 @@ For the analysis we are using 5 data sources:
 - `Market Hotness Index Dataset` - contains monthly hotness index score from 2018 to 2022
 - `Unemployment rate Dataset` - contains monthly unemployment rate from 1990 to 2022
 - `Employees growth by economic sectors Dataset` - contains monthly time series data indicating the growth of employees in each super sector for Cincinnati county.
-- 'US mask mandate dataset' - from common analysis
-- 'US daily confirmed cases' - from common analysis
+- `US mask mandate dataset` - from common analysis
+- `US daily confirmed cases` - from common analysis
 
 
 ### Data Descriptions
 
-*The politician Dataset*
+*Market Hotness Index Datasett*
 
 | Column | Description |
 | ------ | ----------- |
@@ -31,48 +31,16 @@ For the analysis we are using 5 data sources:
 
 Note-The above data contains some rows that provide cumulative regional population counts. These rows are distinguished by having ALL CAPS values in the 'geography' field (e.g. AFRICA, OCEANIA)
 
-### ORES
-For predicting article quality, the ORES API was used. The prediction returned by ORES is in the form of probabilities, as well as an absolute prediction. An article may be predicted to have one of the following quality levels:
+### Methodology
+- Data Cleaning:
+The 3 datasets discussed above for the extended analysis are on a monthly level, and the US daily confirmed cases data is also standardized to a monthly level for further merging and easier analysis.
+- EDA
+After cleaning the data and ensuring the continuity of all the time series data, I first performed exploratory data analysis. The time series plots for the unemployment rate, hotness score for Hamilton county, and employee growth rate by different economic sectors are analyzed. 
+- Correlation
+The Pearson correlation between the unemployment rate and covid confirmed cases and the market hotness index and covid confirmed cases were checked to obtain a preliminary sense if my hypothesis is right or wrong. To validate the results further, I performed regression analysis keeping just one predictor at a time.
+- Regression analysis
+I checked the relationship between the dependent ( unemployment rate ) and the independent variable ( covid confirmed cases) through the beta coefficient. I also tested the significance of the independent variables from their associated p-value. A similar analysis was also performed with the hotness score as the dependent variable and monthly confirmed cases as the independent variable.
 
-FA - Featured article
-
-GA - Good article
-
-B - B-class article
-
-C - C-class article
-
-Start - Start-class article
-
-Stub - Stub-class article
-
-We define "high-quality" as an article predicted to be either FA or GA.
-
-A sample response from ORES looks like this:
-```sh
-{'1013838830': {'articlequality': {'score': {'prediction': 'Stub',
-    'probability': {'B': 0.017602679257176707,
-     'C': 0.03741549736464354,
-     'FA': 0.00349656390489947,
-     'GA': 0.008839274681301947,
-     'Start': 0.24961539813724162,
-     'Stub': 0.6830305866547366}}}},
- '1033383351': {'articlequality': {'score': {'prediction': 'Stub',
-    'probability': {'B': 0.021928761381999028,
-     'C': 0.04943781016566443,
-     'FA': 0.0035527880394051643,
-     'GA': 0.009155740156955146,
-     'Start': 0.31749875536115607,
-     'Stub': 0.5984261448948202}}}},
- '1038918070': {'articlequality': {'score': {'prediction': 'Start',
-    'probability': {'B': 0.06715520305413866,
-     'C': 0.3042686926269415,
-     'FA': 0.0061228301001578925,
-     'GA': 0.015611183313679508,
-     'Start': 0.5748880583707174,
-     'Stub': 0.03195403253436519}}}}
-     }
-```
 
 ## Output files
 
