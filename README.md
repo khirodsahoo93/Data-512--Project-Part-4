@@ -2,6 +2,17 @@
 ## Goal
 The goal of this project is to investigate the implications of Covid-19 pandemic on unemployment rate and market hotness index in the Hamilton county, Ohio.
 
+## Research Questions
+
+Questions: 
+How was the unemployment rate affected during covid 19, and were all economic sectors affected equally?
+How was the housing market sentiment of people during covid19 when many people were facing financial burdens, and what segment of people benefitted from this boom?
+
+Hypothesis: 
+While the overall unemployment rate in the USA increased, I expect Hamilton county to show similar trends in the unemployment rate.
+With the boom in the housing industry in the USA, the market hotness score will also increase in Hamilton county, Ohio.
+
+
 ## Data Sources Used
 For the analysis we are using 5 data sources:
 
